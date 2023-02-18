@@ -7,6 +7,7 @@ class Singleton():
 
     instance = None
 
+    #オブジェクトを作成する前に実行される処理
     def __new__(cls):
         if cls.instance is None:
             #Singletonクラスはobjectクラスを継承しているため、super()はobjectを指す
